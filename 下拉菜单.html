@@ -1,0 +1,351 @@
+<html>
+<title>下拉菜单</title>
+<head>
+<style type="text/css">
+<!--
+body {  font-family: "宋体"; font-size: 9pt; margin-top: 0px; margin-left: 0px; margin-right: 0px}
+UNKNOWN {
+ TEXT-DECORATION: none
+}
+A:visited {
+ TEXT-DECORATION: none
+}
+A:hover {
+ COLOR: #ff0000; TEXT-DECORATION: none
+}
+A:link {
+ TEXT-DECORATION: none
+}
+BODY {
+ FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: "宋体"; TEXT-DECORATION: none
+}
+TR {
+ FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+TD {
+ FONT-WEIGHT: normal; FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+FORM {
+ FONT-SIZE: 9pt; FONT-FAMILY: "宋体"
+}
+.black {
+ FONT-SIZE: 9pt; COLOR: #000000
+}
+.white {
+ FONT-SIZE: 9pt; COLOR: #ffffff
+}
+.red {
+ FONT-SIZE: 9pt; COLOR: #ff0000
+}
+.green {
+ FONT-SIZE: 9pt; COLOR: #009900
+}
+.blue {
+ FONT-SIZE: 9pt; COLOR: #0000ff
+}
+.bg1 {
+ FONT-SIZE: 9pt; COLOR: #ffffff
+}
+.gray {
+ FONT-SIZE: 9pt; COLOR: #666666
+}
+.row {
+ LINE-HEIGHT: 15pt
+}
+.bottom {
+ BORDER-RIGHT: #665b8e 1px solid; BORDER-TOP: #ffffff 1px solid; FONT-SIZE: 9pt; BORDER-LEFT: #ffffff 1px solid; COLOR: #000000; BORDER-BOTTOM: #665b8e 1px solid; FONT-FAMILY: "宋体"; HEIGHT: 18px; BACKGROUND-COLOR: #cccccc
+}
+.editbox1 {
+ FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: 宋体; HEIGHT: 18px; BACKGROUND-COLOR: #dbdbdb
+}
+.editbox2 {
+ PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 9pt; PADDING-BOTTOM: 1px; CURSOR: text; COLOR: #000000; PADDING-TOP: 1px; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #dbdbdb
+}
+.size {
+ FONT-SIZE: 9px; FONT-FAMILY: "Verdana", "Arial", "Helvetica", "sans-serif"
+}
+A.yellow:active {
+ COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:visited {
+ COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:link {
+ COLOR: #ffffff; TEXT-DECORATION: none
+}
+A.yellow:hover {
+ COLOR: #ffff33; TEXT-DECORATION: none
+}
+
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body bgcolor="#fef4d9">
+<br>
+<center>
+<table border=1 bordercolor=blue borderlight=green>
+<tr><td align=center class=p9>
+<SCRIPT language=JavaScript>
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function navbarOver(src,clrOver,clrOverBorder) { if (!src.contains(event.fromElement)){ src.style.cursor = 'hand'; src.bgColor = clrOver; src.borderColor = clrOverBorder; src.children.tags('a')[0].style.color='#FFFF33'; }}
+
+function navbarOut(src,clrIn,clrInBorder) { if (!src.contains(event.toElement)) { src.style.cursor = 'default'; src.bgColor = clrIn; src.borderColor = clrInBorder; src.children.tags('a')[0].style.color='#FFFFFF';}}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_showHideLayers() 
+{ //v3.0
+  var i,p,v,obj,args=MM_showHideLayers.arguments;
+  for (i=0; i<(args.length-2); i+=3) 
+  if ((obj=MM_findObj(args[i]))!=null) 
+   { 
+  v=args[i+2];
+  if (obj.style) 
+  {
+  obj=obj.style;
+  v=(v=='show')?'visible':(v=='hide')?'hidden':v;
+  }
+  obj.visibility=v;
+  }
+}
+//-->
+</SCRIPT>
+<TABLE borderColor=#3c79c6 cellSpacing=2 cellPadding=0 
+                  width="100%" border=1>
+                    <TBODY>
+                    <TR>
+                      <TD borderColor=#cccccc width=80 bgColor=#3064a3 
+height=20>
+                        <DIV id=Layer1 
+                        onmouseover="MM_showHideLayers('Layer1','','show')" 
+                        style="Z-INDEX: 1; VISIBILITY: hidden; WIDTH: 103px; POSITION: absolute; HEIGHT: 80px" 
+                        onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer7','','hide','Layer13','','hide','Layer15','','hide')">
+                        <TABLE class=bg1 cellSpacing=0 cellPadding=0 width=100 
+                        border=0>
+                          <TBODY>
+                          <TR>
+                            <TD height=20> </TD></TR>
+                          <TR>
+                            <TD vAlign=top>
+                              <TABLE borderColor=#000000 cellSpacing=2 
+                              cellPadding=1 width=100 bgColor=#3c79c6 
+                                border=1><TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20><A class=white 
+                                href="http://www.1studio.net/html/example/0055/xtdl_01.htm">[01] 
+                                系统登录</A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                class=white 
+                                href="http://www.1studio.net/html/example/0055/xtdl_02.htm">[02] 
+                                主窗口</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><A 
+                        class=white 
+                        onmouseover="MM_showHideLayers('Layer1','','show')" 
+                        onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer7','','hide','Layer13','','hide','Layer15','','hide')"> 系统登录</A></TD>
+                      <TD borderColor=#cccccc width=80 bgColor=#3064a3>
+                        <DIV id=Layer2 
+                        onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer7','','hide','Layer13','','hide','Layer15','','hide')" 
+                        style="Z-INDEX: 1; VISIBILITY: hidden; WIDTH: 141px; POSITION: absolute; HEIGHT: 80px" 
+                        onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer7','','hide','Layer13','','hide','Layer15','','hide')">
+                        <TABLE class=bg1 cellSpacing=0 cellPadding=0 width=100 
+                        border=0>
+                          <TBODY>
+                          <TR>
+                            <TD height=20> </TD>
+     </TR>
+                          <TR>
+                            <TD>
+
+                              <TABLE borderColor=#000000 cellSpacing=2 
+                              cellPadding=1 width=122 bgColor=#3c79c6 
+                                border=0><TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20><A 
+                                onmouseover="MM_showHideLayers('Layer3','','show')" 
+                                onmouseout="MM_showHideLayers('Layer3','','hide')">[01] 
+                                系统定义 -><DIV id=Layer3 
+                                onmouseover="MM_showHideLayers('Layer2','','show','Layer3','','show')" 
+                                style="Z-INDEX: 2; VISIBILITY: hidden; WIDTH: 159px; POSITION: absolute; HEIGHT: 75px" 
+                                onmouseout="MM_showHideLayers('Layer2','','hide','Layer3','','hide')">
+                                <TABLE cellSpacing=0 cellPadding=0 width=144 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10> </TD>
+                                <TD width=134>
+                                <TABLE borderColor=#000000 cellSpacing=2 
+                                cellPadding=1 width=130 bgColor=#3c79c6 border=1>
+                                <TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20>
+        <A class=white href="http://www.1studio.net/html/example/0055/xtgl_xtdy_01.htm">[01] 
+                                部门定义</A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20>
+        <A class=white href="http://www.1studio.net/html/example/0055/xtgl_xtdy_02.htm">[02] 
+                                币种定义</A></TD></TR>
+                               </TBODY></TABLE>
+    </TD></TR></TBODY></TABLE></DIV></A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                onmouseover="MM_showHideLayers('Layer4','','show')" 
+                                onmouseout="MM_showHideLayers('Layer4','','hide')">[02] 
+                                供应商管理 <IMG height=7 src="5.files/arrow02.gif" 
+                                width=4 border=0></A><DIV id=Layer4 
+                                onmouseover="MM_showHideLayers('Layer2','','show','Layer4','','show')" 
+                                style="Z-INDEX: 2; VISIBILITY: hidden; WIDTH: 149px; POSITION: absolute" 
+                                onmouseout="MM_showHideLayers('Layer2','','hide','Layer4','','hide')">
+   <TABLE cellSpacing=0 cellPadding=0 width=144 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10> </TD>
+                                <TD width=134>
+                                <TABLE borderColor=#000000 cellSpacing=2 
+                                cellPadding=1 width=130 bgColor=#3c79c6 border=1>
+                                <TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20><A class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_gysgl_01.htm">[01] 
+                                供应商登记</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                onmouseover="MM_showHideLayers('Layer5','','show')" 
+                                onmouseout="MM_showHideLayers('Layer5','','hide')">[03] 
+                                商品管理  <IMG height=7 src="5.files/arrow02.gif" 
+                                width=4 border=0></A><DIV id=Layer5 
+                                onmouseover="MM_showHideLayers('Layer2','','show','Layer5','','show')" 
+                                style="Z-INDEX: 2; VISIBILITY: hidden; WIDTH: 149px; POSITION: absolute; HEIGHT: 75px" 
+                                onmouseout="MM_showHideLayers('Layer2','','hide','Layer5','','hide')">
+                                <TABLE cellSpacing=0 cellPadding=0 width=144 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10> </TD>
+                                <TD width=134>
+                                <TABLE borderColor=#000000 cellSpacing=2 
+                                cellPadding=1 width=130 bgColor=#3c79c6 
+border=1>
+                                <TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20><A class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_spgl_01.htm">[01] 
+                                商品分类管理</A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_spgl_02.htm">[02] 
+                                新商品登记</A></TD></TR>
+                              </TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                onmouseover="MM_showHideLayers('Layer6','','show')" 
+                                onmouseout="MM_showHideLayers('Layer6','','hide')">[04] 
+                                数据处理  <IMG height=7 src="5.files/arrow02.gif" 
+                                width=4 border=0></A><DIV id=Layer6                          onmouseover="MM_showHideLayers('Layer2','','show','Layer6','','show')" 
+                                style="Z-INDEX: 2; VISIBILITY: hidden; WIDTH: 149px; POSITION: absolute; HEIGHT: 75px" 
+                                onmouseout="MM_showHideLayers('Layer2','','hide','Layer6','','hide')">
+                                <TABLE cellSpacing=0 cellPadding=0 width=144 
+                                border=0>
+                                <TBODY>
+                                <TR>
+                                <TD width=10> </TD>
+                                <TD width=134>
+                                <TABLE borderColor=#000000 cellSpacing=2 
+                                cellPadding=1 width=130 bgColor=#3c79c6 
+border=1>
+                                <TBODY>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                vAlign=bottom borderColor=#3c79c6 
+                                bgColor=#3c79c6 height=20><A class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_sjcl_01.htm">[01] 
+                                数据备份</A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_sjcl_02.htm">[02] 
+                                日终登记</A></TD></TR>
+                                <TR>
+                                <TD class=bg1 
+                                onmouseover="navbarOver(this,'#6395D1','#000000');" 
+                                onmouseout="navbarOut(this,'#3C79C6','#3C79C6');" 
+                                borderColor=#3c79c6 bgColor=#3c79c6 height=20><A 
+                                class=white 
+                                href="http://www.1studio.net/html/example/0055/xtgl_sjcl_03.htm">[03] 
+                                日终处理</A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV><A 
+                        class=white 
+                        onmouseover="MM_showHideLayers('Layer1','','hide','Layer2','','show','Layer7','','hide','Layer13','','hide','Layer15','','hide')" 
+                        onmouseout="MM_showHideLayers('Layer1','','hide','Layer2','','hide','Layer7','','hide','Layer13','','hide','Layer15','','hide')"> 系统管理</A></TD>
+                   
+                    
+                     </TR></TBODY></TABLE>
+
+</td></tr>
+</table></center>
+<br>
+<br><br>
+<br><br>
+<br>
+<center>
+</HTML><!-- Code Over -->
+</body>
+</html> 
