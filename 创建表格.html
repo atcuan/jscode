@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GB18030">
+<title>Insert title here</title>
+<style type="text/css">
+table{
+	border: #f3e 1px solid;
+}
+table td{
+	border: #0f2 1px solid;
+}
+</style>
+<script type="text/javascript">
+function crtTable()
+{
+	var rowVal = document.getElementsByName("row")[0].value;
+	var cellVal = document.getElementsByName("cell")[0].value;
+	
+	var oTabNode = document.createElement("table");
+	//oTabNode.id = "tabId";
+	oTabNode.setAttribute("id", "tabId");
+	for (var x=0; x<rowVal; x++){
+		var oTrNode = oTabNode.insertRow();
+		for (var y=0; y<cellVal; y++){
+			var oTdNode = oTrNode.insertCell();
+			oTdNode.innerHTML = x+"-"+y;
+		}
+	}
+	document.getElementById("crtTable").appendChild(oTabNode);
+	document.getElementsByName("crtBut")[0].disabled = true;
+}
+
+function delRow()
+{
+	var oTabNode = document.getElementById("tabId");
+	if (oTabNode == null)
+		return;
+	var rowVal = document.getElementsByName("delRow")[0].value;
+	if (rowVal>=0 && rowVal<oTabNode.rows.length)
+		oTabNode.deleteRow(rowVal);
+	var rowVal = document.getElementsByName("delRow")[0].value;
+}
+
+function delCell()
+{
+	var oTabNode = document.getElementById("tabId");
+	if (oTabNode == null)
+		return;
+	
+	var cellVal = document.getElementsByName("delCell")[0].value;
+	if (cellVal>=0 && cellVal<oTabNode.rows[0].cells.length)
+		for (var x=0; x<oTabNode.rows.length; x++)
+			oTabNode.rows[x].deleteCell(cellVal);
+}
+</script>
+</head>
+<body>
+	row:<input type="text" name="row"/>
+	cell:<input type="text" name="cell"/>
+	<input type="button" name="crtBut" value="创建表格" onclick="crtTable()"/>
+	<hr />
+	DelRow:<input type="text" name="delRow" /><input type="button" value="删除行" onclick="delRow()" />
+	<hr />
+	DelCell:<input type="text" name="delCell" /><input type="button" value="删除列" onclick="delCell()" />
+	<hr />
+	<div id="crtTable"></div>
+</body>
+</html>
