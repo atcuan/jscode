@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="GB18030">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	margin: auto;
+	padding: 0px;
+	width: 900px;
+}
+
+#top{
+	margin: auto;
+	padding: 0px;
+	height: 25px;
+	width: 860px;
+	position:absolute;
+	z-index: 88;
+	clear: both;
+	border: #3a0 2px solid;
+}
+
+#buttom{
+	height: 500px;
+	width: 800px;
+	border: #f0e 2px solid; 
+	padding: 32px;
+}
+
+div#top dl
+{
+	margin: 0 0 0 8px ;
+	width: 160px;
+	text-align: left;
+	float: left;
+}
+
+div#top dl dd{
+	height: 25px;
+	line-height: 25px;
+	background-color: #fff;
+}
+
+
+
+div#top dl dd a, div#top dl dd dl dd a{
+	color:#000;
+	text-decoration: none;
+}
+div#top dl dd a:HOVER{
+	color: #f333a0;
+}
+
+div#top dl dd dl{
+	display: none;
+	text-align: left;
+}
+
+div#top dl dd dl dd{
+	width: 100px;
+	margin: 0 0 0 -8px;
+	background-color: grey;
+}
+</style>
+
+<script type="text/javascript">
+	function list(ddNode)
+	{
+		var dlNode = ddNode.getElementsByTagName("dl")[0];
+		with (dlNode.style){
+			display = display=="block" ? "none" : "block";
+		}
+	}
+</script>
+</head>
+<body>
+	 <div id="top">
+	 
+	 	<dl>
+	 		<dd onmouseover="list(this)" onmouseout="list(this)">
+	 			<a href="javascript:void(0)">我的菜单</a>
+	 			<dl>
+	 				<dd><a href="#">NBA</a></dd>
+	 				<dd><a href="#">体育</a></dd>
+	 				<dd><a href="#">高清图片</a></dd>
+	 				<dd><a href="#">互联网</a></dd>
+	 			</dl>
+	 		</dd>
+	 	</dl>
+	 	
+	 	<dl>
+	 		<dd onmouseover="list(this)" onmouseout="list(this)">
+	 			<a href="javascript:void(0)">2菜单</a>
+	 			<dl>
+	 				<dd><a href="#">NBA</a></dd>
+	 				<dd><a href="#">体育</a></dd>
+	 				<dd><a href="#">高清图片</a></dd>
+	 				<dd><a href="#">互联网</a></dd>
+	 			</dl>
+	 		</dd>
+	 	</dl>
+	 	
+	 	<dl>
+	 		<dd onmouseover="list(this)" onmouseout="list(this)">
+	 			<a href="javascript:void(0)">或许没有菜单</a>
+	 			<dl>
+	 				<dd><a href="#">NBA</a></dd>
+	 				<dd><a href="#">体育</a></dd>
+	 				<dd><a href="#">高清图片</a></dd>
+	 				<dd><a href="#">互联网</a></dd>
+	 			</dl>
+	 		</dd>
+	 	</dl>
+	 	
+	 	<dl>
+	 		<dd onmouseover="list(this)" onmouseout="list(this)">
+	 			<a href="javascript:void(0)">我的菜单我菜单</a>
+	 			<dl>
+	 				<dd><a href="#">NBA</a></dd>
+	 				<dd><a href="#">体育</a></dd>
+	 				<dd><a href="#">高清图片</a></dd>
+	 				<dd><a href="#">互联网</a></dd>
+	 			</dl>
+	 		</dd>
+	 	</dl>
+
+	 	<dl>
+	 		<dd onmouseover="list(this)" onmouseout="list(this)">
+	 			<a href="javascript:void(0)">我的菜单</a>
+	 			<dl>
+	 				<dd><a href="#">NBA</a></dd>
+	 				<dd><a href="#">体育</a></dd>
+	 				<dd><a href="#">高清图片</a></dd>
+	 				<dd><a href="#">互联网</a></dd>
+	 			</dl>
+	 		</dd>
+	 	</dl>
+	 </div>
+ 
+	 <div id="buttom">
+	 	JavaScript中的new关键字可以实现实例化和继承的工作，但个人认为使用new关键字并非是最佳的实践，还可以有更友好一些的实现。本文将介绍使用new关键字有什么问题，然后介绍如何对与new相关联的一系列面向对象操作进行封装，以便提供更快捷的、更易让人理解的实现方式。
+
+传统的实例化与继承
+
+假设我们有两个类，Class:function Class() {}和SubClass:function SubClass(){}，SubClass需要继承自Class。传统方法一般是按如下步骤来组织和实现的：
+
+Class中被继承的属性和方法必须放在Class的prototype属性中
+
+SubClass中自己的方法和属性也必须放在自己prototype属性中
+
+SubClass的prototype对象的prototype(__proto__)属性必须指向的Class的prototype
+
+这样一来，由于prototype链的特性，SubClass的实例便能追溯到Class的方法，从而实现继承：
+	 </div>
+</body>
+</html>
